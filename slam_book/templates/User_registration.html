@@ -1,0 +1,113 @@
+{% include 'head.html' %}
+{% include 'head_buttons.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+
+<table align="center">
+
+    <form action="{% url 'store_user' %}" method="post">
+        {% csrf_token %}
+    <tr>
+        <th>
+            <h1 style="color: brown"> User Registration</h1>
+        </th>
+
+    </tr>
+
+     <tr>
+         <th style="text-align: center" width="100">
+              <div class="row">
+                                <div class="col">
+                                    <label>
+                                        <input type="text" class="form-control"  name="first name" placeholder="First name">
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label>
+                                        <input type="text" class="form-control" name="last name" placeholder="Last name">
+                                    </label>
+                                </div>
+              </div>
+         </th>
+
+
+     </tr>
+
+     <tr style="width: 500cm
+">
+    <th style="text-align: center">
+                                             <div>
+                                                 <div class="placeholder" aria-hidden="true">Date Of Birth</div>
+                                                 <label>
+                                                     <input type="date" name="birthday" placeholder="Date Of Birt" required>
+                                                 </label>
+                                             </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                          <label class="form-check-label" for="defaultCheck2">
+                            Disabled checkbox
+                          </label>
+                        </div>
+
+                        <div>
+                                        <div>
+                                            <div class="placeholder" aria-hidden="true">Mobile number or email address</div>
+                                            <input type="text" class="inputtext _58mg _5dba _2ph-" data-type="text" name="email" value="" aria-required="true" placeholder="" aria-label="Mobile number or email address" id="u_0_q">
+                                        </div>
+
+
+                                            <div>
+                                                <div class="placeholder" aria-hidden="true">Re-enter email address</div>
+                                                <input type="text" class="inputtext _58mg _5dba _2ph-" data-type="text" name="reg_email_confirmation__" value="" aria-required="true" placeholder="" aria-label="Re-enter email address" id="u_0_t">
+                                            </div>
+
+
+
+
+
+                                        <div>
+                                            <div class="placeholder" aria-hidden="true">New password</div>
+                                            <input type="password" class="inputtext _58mg _5dba _2ph-" data-type="password" autocomplete="new-password" name="password" aria-required="true" placeholder="" aria-label="New password" id="u_0_x">
+                                        </div>
+                                        <div class="mbm _br- _a4y hidden_elem" id="u_0_u">
+                                                    <div class="uiStickyPlaceholderInput uiStickyPlaceholderEmptyInput">
+                                                        <div class="placeholder" aria-hidden="true">Mobile number</div>
+                                                        <input type="text" class="inputtext _58mg _5dba _2ph-" data-type="text" name="phone" value="" placeholder="" aria-label="Mobile number" id="u_0_v">
+                                                    </div>
+                                                </div>
+                        </div>
+
+    </th>
+     </tr>
+        <tr>
+
+                <th style="text-align: center">
+
+                    <br>
+
+
+                            <button class="btn btn--pill btn--green"  type="submit">Submit</button>
+
+                    </th>
+        </tr>
+
+
+        </form>
+
+</table>
+
+
+</body>
+</html>
